@@ -1,18 +1,31 @@
-<DOCTYPE html>
-<head>
-    <title>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>
         Contact Us
-    </title>
-    <link rel="stylesheet" href="contactus.css">
-</head>
+      </title>
+        <link rel="stylesheet" href="aboutus.css">
+    </head>
 
-<body>
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+      <body>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="News.html">NEWS</a>
+          <a href="Homepage">HOMEPAGE</a>
+          <a href="#">MARKETPLACE</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; BITLOCK</span>
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
       
     <div class="container">
         <div style="text-align:center">
@@ -40,6 +53,6 @@
           </div>
         </div>
       </div>
-</body>
+    </body>
 
-</DOCTYPE>
+</html>
