@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 <title>BITLOCK</title>
 <link rel="stylesheet" type= "text/css" href="aboutus.css">
@@ -6,15 +7,24 @@
 </head>
 <body>
     <script src="News.js"></script>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; BITLOCK</span>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">HOME</a>
-        <a href="#">MARKETPLACE</a>
-        <a href="#">NEWS</a>
-        <a href="#">ABOUT</a>
-        <a href="contactus(1).html">CONTACT</a>
-      </div>
+   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="News.html">NEWS</a>
+    <a href="Homepage">HOMEPAGE</a>
+    <a href="#">MARKETPLACE</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; BITLOCK</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
       <div class="btcwdgt-news" bw-entries="10"></div>
     <div class="btcwdgt-chart" bw-cash="true"></div>        
 </body>
